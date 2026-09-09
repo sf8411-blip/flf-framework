@@ -16,7 +16,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for generation in 0..num_generations {
         println!("─── Generation {} ───", generation);
 
-        // Create a problem sequence
         let problems = create_problem_sequence(generation);
 
         for (idx, problem) in problems.iter().enumerate() {
